@@ -20,14 +20,14 @@ class MyApp extends StatelessWidget {
           title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                  Image.asset(
-                 'images/icon.png',
-                  fit: BoxFit.contain,
-                  height: 26,
+                Image.asset(
+                'images/icon.png',
+                fit: BoxFit.contain,
+                height: 26,
               ),
-              Container(
+                Container(
                   padding: const EdgeInsets.all(8.0), child: Text('Christian Instagram', style: TextStyle(fontFamily: 'Pacifico', color: Colors.black),))
-            ],
+              ],
           ),
         ),
         body: ListView(
@@ -70,7 +70,7 @@ class MyApp extends StatelessWidget {
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.calendar_today),
               label: 'Home',
             ),
             BottomNavigationBarItem(
