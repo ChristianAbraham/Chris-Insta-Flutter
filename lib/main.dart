@@ -67,6 +67,34 @@ class MyApp extends StatelessWidget {
             Divider(color: Colors.grey,),
           ],
         ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              label: 'Search',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.add_box_outlined),
+              label: 'Add',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.favorite_border_outlined),
+              label: 'Likes',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle_outlined),
+              label: 'Profile',
+            ),
+          ],
+          selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.grey,
+          showUnselectedLabels: true,
+          backgroundColor: Colors.white,
+        ),
       ),
     );
   }
